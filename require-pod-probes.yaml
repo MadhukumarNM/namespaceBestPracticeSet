@@ -2,6 +2,7 @@ apiVersion: kyverno.io/v1
 kind: Policy
 metadata:
   name: require-pod-probes
+  namespace: testing
   annotations:
     pod-policies.kyverno.io/autogen-controllers: DaemonSet,Deployment,StatefulSet
     policies.kyverno.io/title: Require Pod Probes
